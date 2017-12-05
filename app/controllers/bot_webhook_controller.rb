@@ -3,7 +3,7 @@ class BotWebhookController < ApplicationController
 
   def answer
     require 'json'
-    require 'recastai'
+    # require 'recastai'
     @text = params["message"]["attachment"]["content"]
     client = RecastAI::Client.new(ENV['recast_token'])
     client.request.analyse_text(@text)
