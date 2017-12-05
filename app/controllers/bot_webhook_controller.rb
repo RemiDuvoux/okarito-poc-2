@@ -3,6 +3,6 @@ class BotWebhookController < ApplicationController
 
   def answer
     # @params = JSON.parse(params.to_s)
-    content_type :json
+    content_type: 'application/json'
   end
 end
