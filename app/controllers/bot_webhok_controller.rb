@@ -1,4 +1,4 @@
-class BotWebhokController < ApplicationController
+class BotWebhookController < ApplicationController
   def answer
     @params = JSON.parse(request.body.read)
     content_type :json
