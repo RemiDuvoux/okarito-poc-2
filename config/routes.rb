@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-# post '/' => 'bot_webhook#answer'
+post '/' => 'bot_webhook#answer'
 
 # post '/errors' do
 #   puts @params
